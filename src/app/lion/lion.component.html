@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngIf='leonInput'>
+    <img class="card-img-top" src="https://i.gifer.com/7CsH.gif" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Species : {{ species }}</h5>
+      <p class="card-text">Name : {{ leonInput?.name }}</p>
+      <p class="card-text">Breed : {{ leonInput?.breed }}</p>
+      <button class="btn btn-primary" (click)="roar()">Roar</button>
+    </div>
+</div>

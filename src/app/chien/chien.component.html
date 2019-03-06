@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngIf='dogInput'>
+    <img class="card-img-top" src="https://bridoz.com/wp-content/uploads/2014/07/anigif_enhanced-buzz-25730-1355518361-8.gif" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Species : {{ species }}</h5>
+      <p class="card-text">Name : {{ dogInput?.name }}</p>
+      <p class="card-text">Breed : {{ dogInput?.breed }}</p>
+      <button class="btn btn-primary" (click)="bark()">Bark</button>
+    </div>
+</div>

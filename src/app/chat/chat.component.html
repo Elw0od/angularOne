@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngIf='catInput'>
+    <img class="card-img-top" src="https://media.giphy.com/media/26FPCXdkvDbKBbgOI/giphy.gif" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Species : {{ spencies }}</h5>
+      <p class="card-text">Name : {{ catInput?.name }}</p>
+      <p class="card-text">Breed : {{ catInput?.breed }}</p>
+      <button class="btn btn-primary" (click)="miaou()">Miaou</button>
+    </div>
+  </div>

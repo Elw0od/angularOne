@@ -1,0 +1,7 @@
+<div class="animalList row justify-content-between">
+<div *ngFor="let animal of animalList">
+  <app-chat class="col-4" *ngIf="animal.type == 0" [catInput] = "animal" (onCatMiaouEvent)="AlertFormSound(animal)"></app-chat>
+  <app-chien class="col-4" *ngIf="animal.type == 1" [dogInput] = "animal" (onDogBarkEvent)="AlertFormSound(animal)"></app-chien>
+  <app-lion class="col-4" *ngIf="animal.type == 2" [leonInput] = "animal" (onLeonRoarEvent)="AlertFormSound(animal)"></app-lion>
+</div>
+</div>
